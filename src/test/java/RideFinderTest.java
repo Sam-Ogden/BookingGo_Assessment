@@ -5,5 +5,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RideFinderTest {
-
+    // @Test public void testSomeLibraryMethod() {
+    //     RideFinder classUnderTest = new RideFinder();
+    //     assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    // }
 }

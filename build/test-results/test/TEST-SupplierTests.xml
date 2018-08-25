@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SupplierTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-08-25T21:56:54" hostname="Samuels-MacBook-Air.local" time="0.006">
+  <properties/>
+  <testcase name="addCarType_MaxPassengersToSmall_ReturnsFalse" classname="SupplierTests" time="0.004"/>
+  <testcase name="addCarType_ValidCar_ReturnsTrue" classname="SupplierTests" time="0.0"/>
+  <testcase name="addCarType_TypeExists_ReturnsFalse" classname="SupplierTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

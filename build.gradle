@@ -1,6 +1,8 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'java'
+    id 'application'
 }
 
 dependencies {
@@ -20,3 +22,9 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+test {
+    testLogging.showStandardStreams = true
+}
+
+mainClassName = 'RideFinder'
