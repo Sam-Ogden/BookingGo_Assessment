@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SupplierNetworkTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-08-26T15:41:32" hostname="Samuels-MacBook-Air.local" time="0.011">
+  <properties/>
+  <testcase name="updateBestOffers_ReceiveWorseOffer_MapNotUpdated" classname="SupplierNetworkTests" time="0.011"/>
+  <testcase name="updateBestOffers_ReceiveBetterOffer_MapUpdated" classname="SupplierNetworkTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
