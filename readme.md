@@ -4,10 +4,14 @@
 ./gradlew build
 
 ### Run
+##### Part_1
 ./gradlew run --args 'arg1 arg2 arg3'
 
+##### Part_2 (Master Branch)
+./gradlew run
+
 ### Test
-./gradlew clean test
+./gradlew test
 
 # Part 1
 ## Design
