@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SupplierTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-08-26T15:41:32" hostname="Samuels-MacBook-Air.local" time="0.006">
+<testsuite name="SupplierTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-08-27T11:14:43" hostname="Samuels-MacBook-Air.local" time="0.005">
   <properties/>
   <testcase name="addCarType_MaxPassengersToSmall_ReturnsFalse" classname="SupplierTests" time="0.0"/>
   <testcase name="addCarType_ValidCar_ReturnsTrue" classname="SupplierTests" time="0.001"/>
-  <testcase name="filterResults_1Passenger_2CarTypesReturned" classname="SupplierTests" time="0.004"/>
+  <testcase name="filterResults_1Passenger_2CarTypesReturned" classname="SupplierTests" time="0.003"/>
   <testcase name="filterResults_NoOffers_EmptyListReturned" classname="SupplierTests" time="0.0"/>
   <testcase name="addCarType_TypeExists_ReturnsFalse" classname="SupplierTests" time="0.0"/>
   <testcase name="filterResults_10Passengers_OnlyBigCabReturned" classname="SupplierTests" time="0.0"/>

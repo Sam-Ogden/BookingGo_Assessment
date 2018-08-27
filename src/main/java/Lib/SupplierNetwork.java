@@ -6,8 +6,8 @@ import java.util.LinkedList;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
+import com.mashape.unirest.http.exceptions.UnirestException;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 /**
  * Handles the taxi firm network and querying taxi firms.
@@ -21,7 +21,7 @@ public class SupplierNetwork {
     }
 
     // Query all available suppliers and update offers for each vehicle type.
-    public HashMap<String, SupplierResult> querySuppliers(Trip t) {
+    public HashMap<String, SupplierResult> querySuppliers(Trip t) throws UnirestException {
         
         HashMap<String, SupplierResult> bestOffers = new HashMap<String, SupplierResult>();
         
@@ -37,12 +37,13 @@ public class SupplierNetwork {
                 result = response.getBody().getObject();
                 // Filter result on passenger number.
                 LinkedList<JSONObject> newOffers = currSupplier.filterResults(t, result.getJSONArray("options"));
-                // Update best offers with new offers if has lower price.
+                // Update best offers with new offers if it has a lower price.
                 updateBestOffers(bestOffers, newOffers, currSupplier);
             } else {
-                // Error with query or supplier API
-                if(response != null) {
-                    System.out.println(response.getBody().getObject().get("message"));
+                // Error with query or supplier API.
+                if(response != null && response.getStatus() == 400) {
+                    String err = response.getBody().getObject().get("message").toString();
+                    throw new UnirestException(err);
                 }
             }
         }

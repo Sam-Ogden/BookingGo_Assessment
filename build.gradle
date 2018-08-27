@@ -20,8 +20,13 @@ dependencies {
     compile "org.apache.httpcomponents:httpasyncclient:4.0.2"
     compile "org.apache.httpcomponents:httpmime:4.3.6"
     compile "org.json:json:20140107"
+    compile "com.sparkjava:spark-core:2.7.2" // add to build.gradle (for Java users)
+    compile "org.slf4j:slf4j-api:1.7.5"
+    compile "org.slf4j:slf4j-simple:1.6.4"
     testCompile "junit:junit:4.11"
     testCompile "commons-io:commons-io:2.4"
+    testCompile "com.despegar:spark-test:1.1.8"
+    
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -35,4 +40,4 @@ test {
     testLogging.showStandardStreams = true
 }
 
-mainClassName = 'RideFinder'
+mainClassName = 'RideFinderAPI'
