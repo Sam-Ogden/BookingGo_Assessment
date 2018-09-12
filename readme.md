@@ -3,25 +3,25 @@
 ### Build
 ./gradlew build
 
-### Run
-./gradlew run --args 'arg1 arg2 arg3'
-
 ### Test
 ./gradlew clean test
 
 # Part 1
-## Design
-The Lib package has been desiged to allow re-use in different applications by providing methods to customise available suppliers and car types.
+## Console application to print the search results for Dave's Taxis
+`./gradlew run --args 'pickup dropoff'`
 
-#### Supplier Network Class
-Maintains a list of available Suppliers and handles the responses from them to return the best offers. 
+e.g.
+`./gradlew run --args '53.483959,-2.244644 3.4774,2.2309'`
 
-#### Supplier Class
-Handles individual supplier details and sending requests to their APIs. Also maintains the list of available car types.
+## Console application to filter by number of passengers
+`./gradlew run --args 'pickup dropoff #Passengers'`
+
+e.g.
+`./gradlew run --args '53.483959,-2.244644 3.4774,2.2309 16'`
 
 # Part 2
-## Implementation
-The API was implemented using spark. 
+To start the server pass no arguments. 
+`./gradlew run`
 
 1 route is defined.
 

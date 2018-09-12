@@ -23,7 +23,7 @@ public class SupplierNetworkTests {
         LinkedList<JSONObject> newOffers = new LinkedList<JSONObject>();
         Supplier oldSupplier = new Supplier("Dave", "https://example.com/dave");
         Supplier currentSupplier = new Supplier("Sam", "https://example.com/sam");
-        SupplierResult oldOffer = new SupplierResult(oldSupplier, 2);
+        SupplierResult oldOffer = new SupplierResult(oldSupplier, 2, "");
         
         bestOffers.put("CAR", oldOffer);
         newOffers.push(new JSONObject("{\"price\":1,\"car_type\":\"CAR\"}"));
@@ -43,7 +43,7 @@ public class SupplierNetworkTests {
         LinkedList<JSONObject> newOffers = new LinkedList<JSONObject>();
         Supplier oldSupplier = new Supplier("Dave", "https://example.com/dave");
         Supplier currentSupplier = new Supplier("Sam", "https://example.com/sam");
-        SupplierResult oldOffer = new SupplierResult(oldSupplier, 1);
+        SupplierResult oldOffer = new SupplierResult(oldSupplier, 1, "");
         
         bestOffers.put("CAR", oldOffer);
         newOffers.push(new JSONObject("{\"price\":2,\"car_type\":\"CAR\"}"));

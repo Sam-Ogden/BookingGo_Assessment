@@ -16,10 +16,12 @@ import org.json.JSONObject;
  * Manages taxi firm details and API requests.
  */
 public class Supplier {
-    // Maintain list of possible vehicles from any supplier
-    private static HashMap<String, Vehicle> cars = new HashMap<String, Vehicle>();
+
     private static final int CONNECTION_TIMEOUT = 2000;
     private static final int SOCKET_TIMEOUT = 2000;
+
+    // Maintain list of possible vehicles from any supplier
+    private static HashMap<String, Vehicle> cars = new HashMap<String, Vehicle>();
 
     private String id;
     private String apiPath; 

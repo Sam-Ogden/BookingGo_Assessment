@@ -62,11 +62,11 @@ public class SupplierNetwork {
                 int currentOffer = bestOffers.get(carType).getPrice();
                 if(newOffer < currentOffer) {
                     // Better offer received, update.
-                    bestOffers.replace(carType, new SupplierResult(currSupplier, newOffer));
+                    bestOffers.replace(carType, new SupplierResult(currSupplier, newOffer, carType));
                 }
             } else {
                 // No previous offer for this car type 
-                bestOffers.put(carType, new SupplierResult(currSupplier, newOffer));
+                bestOffers.put(carType, new SupplierResult(currSupplier, newOffer, carType));
             }
         });
     }

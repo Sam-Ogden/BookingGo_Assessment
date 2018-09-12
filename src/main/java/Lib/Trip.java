@@ -6,11 +6,15 @@ package Lib;
 public class Trip {
     private String pickupLocation;
     private String dropoffLocation;
-    private int numPassengers; 
+    private int numPassengers = 0; 
 
-    public Trip(String _pickup, String _dropOff, int _numPassengers) {
+    public Trip(String _pickup, String _dropOff) {
         pickupLocation = _pickup;
         dropoffLocation = _dropOff;
+    }
+
+    public Trip(String _pickup, String _dropOff, int _numPassengers) {
+        this(_pickup, _dropOff);
         numPassengers = _numPassengers;
     }
 
