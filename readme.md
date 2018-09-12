@@ -4,7 +4,7 @@
 ./gradlew build
 
 ### Test
-./gradlew clean test
+./gradlew test
 
 # Part 1
 ## Console application to print the search results for Dave's Taxis
